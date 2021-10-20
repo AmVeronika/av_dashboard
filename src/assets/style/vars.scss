@@ -1,0 +1,25 @@
+$red: #a73333;
+
+
+
+//Fonts
+
+$ff-regular: Poppins-Regular, sans-serif;//400
+$ff-medium: Poppins-Medium, sans-serif;//500
+$ff-semibold: Poppins-SemiBold, sans-serif;//600
+
+.fs-54{
+  @include adaptiv-font(54, 30);
+}
+.fs-44{
+  @include adaptiv-font(44, 22);
+}
+.fs-28{
+  @include adaptiv-font(28, 18);
+}
+.fs-18{
+  @include adaptiv-font(18, 16);
+}
+.fs-16{
+  @include adaptiv-font(16, 14);
+}
