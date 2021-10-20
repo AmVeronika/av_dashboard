@@ -10,33 +10,33 @@ const routes = [
   {
     path: "/projects",
     name: "Projects",
-    component: () =>
-      import("../views/Projects.vue"),
+    component: () => import("../views/Projects.vue"),
   },
   {
     path: "/timesheet",
     name: "Timesheet",
-    component: () =>
-      import("../views/Timesheet.vue"),
+    component: () => import("../views/Timesheet.vue"),
   },
   {
     path: "/todo",
     name: "Todo",
-    component: () =>
-      import("../views/Todo.vue"),
+    component: () => import("../views/Todo.vue"),
   },
   {
     path: "/settings",
     name: "Settings",
-    component: () =>
-      import("../views/Settings.vue"),
+    component: () => import("../views/Settings.vue"),
   },
 
   {
     path: "/useful",
     name: "Useful",
-    component: () =>
-      import("../views/Useful.vue"),
+    component: () => import("../views/Useful.vue"),
+  },
+  {
+    path: "/404",
+    name: "Page404",
+    component: () => import("../views/Page404.vue"),
   },
 ];
 

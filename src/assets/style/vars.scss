@@ -1,5 +1,29 @@
-$red: #a73333;
+//COLORS
+//YELLOW:
+$col-orange: #FABB18; // оранжевый
+$col-light-orange: #FFF8E8; // светло-оранжевый
+$col-gauzy-orange: #FABB18; // полупрозрачный оранжевый
+$hover-orange: #FABB18;
+$pressed-orange: #FF8C00;
+$disabled-orange: #FFF8E8;
 
+//BLUE:
+$col-blue: #109CF1;
+$hover-blue: #34AFF9;
+$pressed-blue: #098EDF;
+$disabled-blue: #C2CFE0;
+
+//TASK statuses:
+$task-completed: #2ED47A;
+$task-active: #FFB946;
+$task-ended: #F7685B;
+
+//Theme:
+$main-grey: #F9F9F9;
+$text-grey: #8F8F8F;
+$svg-gray: #B3B3B3;
+$white: #FFFFFF;
+$black: #000000;
 
 
 //Fonts
@@ -10,16 +34,33 @@ $ff-semibold: Poppins-SemiBold, sans-serif;//600
 
 .fs-54{
   @include adaptiv-font(54, 30);
+  font-family: $ff-semibold;
 }
 .fs-44{
   @include adaptiv-font(44, 22);
+  font-family: $ff-semibold;
+}
+.fs-36{
+  @include adaptiv-font(36, 22);
+  font-family: $ff-semibold;
 }
 .fs-28{
   @include adaptiv-font(28, 18);
+  font-family: $ff-medium;
 }
 .fs-18{
   @include adaptiv-font(18, 16);
+  font-family: $ff-regular;
 }
 .fs-16{
-  @include adaptiv-font(16, 14);
+  @include adaptiv-font(16, 13);
+  font-family: $ff-medium;
+}
+.fs-14{
+  @include adaptiv-font(14, 10);
+  font-family: $ff-regular;
+}
+.fs-12{
+  @include adaptiv-font(12, 10);
+  font-family: $ff-regular;
 }
