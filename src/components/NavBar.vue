@@ -82,6 +82,8 @@ export default {
   height: 100%;
   display: flex;
   flex-direction: column;
+  grid-column: 1/2;
+  grid-row: 1/3;
 
   &__logo {
     height: 120px;

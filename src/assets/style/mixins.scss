@@ -3,7 +3,7 @@
     font-family: $font_name;
     font-display: swap;
     src: url("~@/assets/fonts/#{$file_name}.woff") format("woff");
-    font-weight: $weight;
+    font-weight: #{$weight};
     font-style: #{$style};
   }
 }

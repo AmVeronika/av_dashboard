@@ -1,5 +1,7 @@
 <template>
-<div class="page-error"></div>
+  <div class="main">
+
+  </div>
 </template>
 
 <script>

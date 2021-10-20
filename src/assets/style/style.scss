@@ -3,7 +3,13 @@
 @import "./fonts.scss";
 @import "./vars.scss";
 
-
+.main{
+  background: $main-grey;
+  border-top-left-radius: 38px;
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-top: 67px;
+}
 
 
 

@@ -35,32 +35,40 @@ $ff-semibold: Poppins-SemiBold, sans-serif;//600
 .fs-54{
   @include adaptiv-font(54, 30);
   font-family: $ff-semibold;
+  font-weight: 600;
 }
 .fs-44{
   @include adaptiv-font(44, 22);
   font-family: $ff-semibold;
+  font-weight: 600;
 }
 .fs-36{
   @include adaptiv-font(36, 22);
   font-family: $ff-semibold;
+  font-weight: 600;
 }
 .fs-28{
   @include adaptiv-font(28, 18);
   font-family: $ff-medium;
+  font-weight: 500;
 }
 .fs-18{
   @include adaptiv-font(18, 16);
   font-family: $ff-regular;
+  font-weight: 400;
 }
 .fs-16{
   @include adaptiv-font(16, 13);
   font-family: $ff-medium;
+  font-weight: 500;
 }
 .fs-14{
   @include adaptiv-font(14, 10);
   font-family: $ff-regular;
+  font-weight: 400;
 }
 .fs-12{
   @include adaptiv-font(12, 10);
   font-family: $ff-regular;
+  font-weight: 400;
 }
