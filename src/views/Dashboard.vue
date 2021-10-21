@@ -1,8 +1,8 @@
 <template>
   <div class="main">
     <div class="main__row">
-      <CurrentDate />
-      <StartSession />
+      <HomeCurrentDate />
+      <HomeStartSession />
     </div>
     <div class="main__row">
       <HomeMyProgress/>
@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import CurrentDate from "../components/CurrentDate";
-import StartSession from "../components/StartSession";
+import HomeCurrentDate from "../components/HomeCurrentDate";
+import HomeStartSession from "../components/HomeStartSession";
 import HomeMyProgress from "../components/HomeMyProgress";
 import HomeSessionRecording from "../components/HomeSessionRecording";
 import HomeCurrentProject from "../components/HomeCurrentProject";
@@ -29,8 +29,8 @@ import HomeOverallProgress from "../components/HomeOverallProgress";
 export default {
   name: "Dashboard",
   components: {
-    CurrentDate,
-    StartSession,
+    HomeCurrentDate,
+    HomeStartSession,
     HomeMyProgress,
     HomeSessionRecording,
     HomeCurrentProject,

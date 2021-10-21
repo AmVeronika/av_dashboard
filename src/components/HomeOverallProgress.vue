@@ -1,10 +1,17 @@
 <template>
-  <section></section>
+  <section class="center-section">
+    <Heading title="Общий прогресс" />
+  </section>
 </template>
 
 <script>
+import Heading from "./elements/Heading";
+
 export default {
-  name: "HomeOverallProgress"
+  name: "HomeOverallProgress",
+  components: {
+    Heading,
+  },
 }
 </script>
 

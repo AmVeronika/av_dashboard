@@ -63,6 +63,11 @@ $ff-semibold: Poppins-SemiBold, sans-serif;//600
   font-family: $ff-medium;
   font-weight: 500;
 }
+.fs-16r{
+  @include adaptiv-font(16, 13);
+  font-family: $ff-regular;
+  font-weight: 400;
+}
 .fs-14{
   @include adaptiv-font(14, 10);
   font-family: $ff-regular;
