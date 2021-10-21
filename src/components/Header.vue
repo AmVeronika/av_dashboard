@@ -53,7 +53,7 @@ export default {
       min-height: 26px;
       background: $col-orange;
       border-radius: 50%;
-      padding: 5px 5px;
+      padding: 10% 5px;
       text-align: center;
       position: absolute;
       right: -13px;
