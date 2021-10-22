@@ -5,6 +5,7 @@
       <option class="materials__option" disabled value="">Категории</option>
       <option
         class="materials__option"
+        :style="{background:material.category}"
         v-for="material in materialsList"
         :key="material.id"
       >
@@ -102,7 +103,6 @@ export default {
     border-radius: 14px;
     font-weight: 600;
     margin-bottom: 15px;
-
     &-circle {
       display: inline-block;
       width: 37px;
@@ -111,7 +111,6 @@ export default {
       border-radius: 50px;
     }
   }
-
   &__list {
     overflow: auto;
     height: 296px;
