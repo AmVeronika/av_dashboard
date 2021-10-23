@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Heading from "./elements/Heading";
-import Diagram from "./elements/Diagram";
+import Heading from "../elements/Heading";
+import Diagram from "../elements/Diagram";
 
 export default {
   name: "HomeOverallProgress",

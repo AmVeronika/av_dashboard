@@ -4,7 +4,7 @@
     <p class="header__user-proff fs-12">Frontend developer</p>
     <div class="header__user-avatar">
       <img
-        src="../assets/img/users/user-avatar1.png"
+        src="../../assets/img/users/user-avatar1.png"
         alt="аватар"
         class="header__user-img"
       />

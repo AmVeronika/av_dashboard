@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import Heading from "./elements/Heading";
+import Heading from "../elements/Heading";
 
 export default {
   name: "HomeSessionRecording",

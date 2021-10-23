@@ -24,11 +24,11 @@
             :style="{ background: material.category }"
           ></span>
           <p class="materials__item-name fs-16r">{{ material.name }}</p>
-          <a
-            class="materials__item-link fs-14{"
+          <main-link
+            class="materials__item-link fs-14"
             :href="material.url"
             target="_blank"
-            >Перейти</a
+            >Перейти</main-link
           >
         </li>
       </ul>
@@ -37,7 +37,8 @@
 </template>
 
 <script>
-import Heading from "./elements/Heading";
+import Heading from "../elements/Heading";
+import MainLink from "../elements/MainLinks";
 
 export default {
   name: "HomeMaterials",
@@ -97,6 +98,7 @@ export default {
     };
   },
   components: {
+    MainLink,
     Heading,
   },
 };

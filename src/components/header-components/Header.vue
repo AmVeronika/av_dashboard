@@ -25,6 +25,7 @@
         <p class="header__notification-quantity fs-14">12</p>
       </div>
       <HeaderAccount />
+      <HeaderAuth/>
     </div>
   </header>
 </template>

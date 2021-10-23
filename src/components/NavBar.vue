@@ -249,7 +249,7 @@ export default {
       }
     }
     &-svg {
-      margin-right: 35px;
+      margin-right: 27px;
       &--color {
         fill: $svg-gray;
       }

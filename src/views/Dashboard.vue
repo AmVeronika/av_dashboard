@@ -18,13 +18,13 @@
 </template>
 
 <script>
-import HomeCurrentDate from "../components/HomeCurrentDate";
-import HomeStartSession from "../components/HomeStartSession";
-import HomeMyProgress from "../components/HomeMyProgress";
-import HomeSessionRecording from "../components/HomeSessionRecording";
-import HomeCurrentProject from "../components/HomeCurrentProject";
-import HomeMaterials from "../components/HomeMaterials";
-import HomeOverallProgress from "../components/HomeOverallProgress";
+import HomeCurrentDate from "../components/home-components/HomeCurrentDate";
+import HomeStartSession from "../components/home-components/HomeStartSession";
+import HomeMyProgress from "../components/home-components/HomeMyProgress";
+import HomeSessionRecording from "../components/home-components/HomeSessionRecording";
+import HomeCurrentProject from "../components/home-components/HomeCurrentProject";
+import HomeMaterials from "../components/home-components/HomeMaterials";
+import HomeOverallProgress from "../components/home-components/HomeOverallProgress";
 
 export default {
   name: "Dashboard",
