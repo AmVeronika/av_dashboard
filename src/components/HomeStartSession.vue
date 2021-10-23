@@ -27,7 +27,7 @@ export default {
 .start {
   background: $white;
   border-radius: 34px;
-  padding: 38px 50px;
+  padding: 25px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;

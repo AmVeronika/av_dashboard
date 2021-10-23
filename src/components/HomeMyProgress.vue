@@ -2,7 +2,7 @@
   <section class="person-stat">
     <Heading title="Мой прогресс" />
     <div class="person-stat__wrap">
-      <p class="person-stat__data fs-44">
+      <p class="person-stat__data fs-36">
         <span class="person-stat__data-value">0</span>%
       </p>
       <div class="person-stat__bg">

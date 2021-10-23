@@ -210,8 +210,6 @@ export default {
 
 <style lang="scss">
 .navbar {
-  width: 345px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   grid-column: 1/2;
@@ -232,7 +230,6 @@ export default {
     margin: 55px auto 0;
   }
   &__link {
-    width: 245px;
     display: flex;
     align-items: center;
     color: $black;

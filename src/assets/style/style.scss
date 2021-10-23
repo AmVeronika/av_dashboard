@@ -6,13 +6,15 @@
 .main{
   background: $main-grey;
   border-top-left-radius: 38px;
-  padding-right: 45px;
-  padding-left: 45px;
-  padding-top: 67px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 35px;
+
 }
 .person-stat {
-  width: 470px;
-  padding: 34px 25px 29px;
+  padding: 25px 20px;
   background: $white;
   border-radius: 34px;
  &__wrap {
@@ -23,22 +25,20 @@
     margin-top: 45px;
   }
   &__bg {
-    width: 140px;
-    height: 140px;
-    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: $col-light-orange;
     border-radius: 38px;
   }
-  &__svg {
-    margin-top: 42px;
-  }
 }
 .center-section {
-  width: 721px;
   height: 501px;
   background: $white;
   border-radius: 34px;
-  padding: 34px 40px 60px;
+  padding: 30px;
 }
 
 

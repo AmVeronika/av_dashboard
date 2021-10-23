@@ -106,7 +106,7 @@ export default {
 .materials {
   &__select {
     margin-top: 20px;
-    width: 640px;
+    width: 100%;
     padding: 14px;
     border: 1px solid $form-gray;
     border-radius: 14px;

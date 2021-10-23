@@ -2,7 +2,7 @@
   <section class="person-stat">
     <Heading title="Время за сессию" />
     <div class="person-stat__wrap">
-      <p class="person-stat__data fs-44">
+      <p class="person-stat__data fs-36">
         <span class="person-stat__data-value">40:00:05</span>
       </p>
       <div class="person-stat__bg">

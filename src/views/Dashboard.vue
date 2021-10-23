@@ -4,16 +4,16 @@
       <HomeCurrentDate />
       <HomeStartSession />
     </div>
-    <div class="main__row">
+    <div class="main__row--grid-3c">
       <HomeMyProgress />
       <HomeSessionRecording />
       <HomeCurrentProject />
     </div>
-    <div class="main__row">
+    <div class="main__row--grid-2c">
       <HomeMaterials />
       <HomeOverallProgress />
     </div>
-    <div class="main__row"></div>
+    <div class="main__row-grid"></div>
   </div>
 </template>
 
@@ -44,7 +44,19 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 73px;
-  column-gap: 34px;
+  margin-bottom: 35px;
+  column-gap: 30px;
+  &--grid-3c{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    gap: 30px;
+    justify-content: space-between;
+  }
+  &--grid-2c{
+    display: grid;
+    grid-template-columns: repeat(2,540px);
+    gap: 30px;
+    justify-content: space-between;
+  }
 }
 </style>
