@@ -1,15 +1,11 @@
 <template>
-  <div class="main">
-
-  </div>
+  <div class="main"></div>
 </template>
 
 <script>
 export default {
-  name: "Page404"
+  name: "Page404",
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

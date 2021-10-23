@@ -1,24 +1,49 @@
+<template>
+  <DoughnutChart v-bind="doughnutChartProps" />
+</template>
+
 <script>
-import { Pie } from "vue-chartjs";
+import { Chart, registerables } from "chart.js";
+import { DoughnutChart, useDoughnutChart } from "vue-chart-3";
+import { ref, computed, defineComponent } from "vue";
 
-export default {
+Chart.register(...registerables);
+
+export default defineComponent({
   name: "Diagram",
-  extends: Pie,
-  labels: [
-    'Red',
-    'Blue',
-    'Yellow'
-  ],
-  datasets: [{
-    label: 'My First Dataset',
-    data: [300, 50, 100],
-    backgroundColor: [
-      'rgb(255, 99, 132)',
-      'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'
-    ],
-    hoverOffset: 4
-  }]
-};
-</script>
+  components: {
+    DoughnutChart,
+  },
+  setup() {
+    const data = ref([30, 40, 60]);
 
+    const chartData = computed(() => ({
+      labels: ["Выполнено", "В работе", "Нерешённые задачи"],
+      datasets: [
+        {
+          data: data.value,
+          backgroundColor: ["#2ED47A", "#FFB946", "#F7685B"],
+        },
+      ],
+    }));
+
+    const options = computed(() => ({
+      plugins: {
+        legend: {
+          position: "right",
+          labels: {
+            usePointStyle: true,
+          },
+        },
+      },
+    }));
+
+    const { doughnutChartProps, doughnutChartRef } = useDoughnutChart({
+      chartData,
+      options,
+    });
+
+    return { doughnutChartProps, doughnutChartRef, options };
+  },
+});
+</script>

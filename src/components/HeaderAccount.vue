@@ -3,14 +3,18 @@
     <h5 class="header__user-name fs-16">Вероника Михотина</h5>
     <p class="header__user-proff fs-12">Frontend developer</p>
     <div class="header__user-avatar">
-      <img src="../assets/img/users/user-avatar1.png" alt="аватар" class="header__user-img">
+      <img
+        src="../assets/img/users/user-avatar1.png"
+        alt="аватар"
+        class="header__user-img"
+      />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HeaderAccount"
+  name: "HeaderAccount",
 };
 </script>
 
@@ -26,10 +30,9 @@ export default {
   }
 
   &__user-name {
-
   }
   &__user-proff {
-  color: $text-grey;
+    color: $text-grey;
     align-self: flex-start;
   }
   &__user-avatar {
@@ -41,8 +44,5 @@ export default {
   &__user-img {
     width: 100%;
   }
-
 }
-
-
 </style>

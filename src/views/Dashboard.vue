@@ -5,13 +5,13 @@
       <HomeStartSession />
     </div>
     <div class="main__row">
-      <HomeMyProgress/>
-      <HomeSessionRecording/>
-      <HomeCurrentProject/>
+      <HomeMyProgress />
+      <HomeSessionRecording />
+      <HomeCurrentProject />
     </div>
     <div class="main__row">
-      <HomeMaterials/>
-      <HomeOverallProgress/>
+      <HomeMaterials />
+      <HomeOverallProgress />
     </div>
     <div class="main__row"></div>
   </div>
@@ -35,7 +35,7 @@ export default {
     HomeSessionRecording,
     HomeCurrentProject,
     HomeMaterials,
-    HomeOverallProgress
+    HomeOverallProgress,
   },
 };
 </script>

@@ -5,7 +5,7 @@
       <option class="materials__option" disabled value="">Категории</option>
       <option
         class="materials__option"
-        :style="{background:material.category}"
+        :style="{ background: material.category }"
         v-for="material in materialsList"
         :key="material.id"
       >
@@ -17,10 +17,19 @@
         <li
           class="materials__item"
           v-for="material in materialsList"
-          :key="material.id">
-          <span class="materials__item-category" :style="{background:material.category}"></span>
+          :key="material.id"
+        >
+          <span
+            class="materials__item-category"
+            :style="{ background: material.category }"
+          ></span>
           <p class="materials__item-name fs-16r">{{ material.name }}</p>
-          <a class="materials__item-link fs-14{" :href="material.url" target="_blank">Перейти</a>
+          <a
+            class="materials__item-link fs-14{"
+            :href="material.url"
+            target="_blank"
+            >Перейти</a
+          >
         </li>
       </ul>
     </div>
@@ -40,56 +49,56 @@ export default {
           category: "#FABB18",
           name: "Application Programming Interface",
           url: "https://ru.vuejs.org/v2/guide/migration-vue-router.html#v-link-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%BE",
-          id: 0
+          id: 0,
         },
         {
           category: "#FB7B48",
           name: "Java Script",
           url: "https://router.vuejs.org/ru/",
-          id: 1
+          id: 1,
         },
         {
           category: "#FB7B48",
           name: "JavaScript-фреймворк",
           url: "https://gb.ru/lessons/167810/homework",
-          id: 2
+          id: 2,
         },
         {
           category: "#FA3338",
           name: "library",
           url: "https://www.google.com/",
-          id: 3
+          id: 3,
         },
         {
           category: "#FA3338",
           name: "Application Programming Interface",
           url: "https://ru.vuejs.org/v2/guide/migration-vue-router.html#v-link-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%BE",
-          id: 0
+          id: 0,
         },
         {
           category: "#FABB18",
           name: "Java Script",
           url: "https://router.vuejs.org/ru/",
-          id: 1
+          id: 1,
         },
         {
           category: "#FABB18",
           name: "JavaScript-фреймворк",
           url: "https://gb.ru/lessons/167810/homework",
-          id: 2
+          id: 2,
         },
         {
           category: "#FABB18",
           name: "library",
           url: "https://www.google.com/",
-          id: 3
-        }
-      ]
+          id: 3,
+        },
+      ],
     };
   },
   components: {
-    Heading
-  }
+    Heading,
+  },
 };
 </script>
 
