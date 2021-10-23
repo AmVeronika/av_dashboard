@@ -130,10 +130,10 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 17px;
-    border: 1px solid $form-gray;
+    padding: 12px 17px;
+    border: 1px solid #F1F1F1;
     border-radius: 14px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     gap: 20px;
 
     &-link {

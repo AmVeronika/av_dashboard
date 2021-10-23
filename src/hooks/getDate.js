@@ -1,16 +1,26 @@
-import { ref, computed } from "vue";
+import { ref } from "vue";
 
 export default function getDate() {
   const moment = require("moment");
-  const date = moment().locale("ru").format("llll").split(" ");
-  const dayOfWeek = ref(
-    date[0].charAt(0).toUpperCase() + date[0].substring(1).replace(/,/, "")
-  );
-  const day = ref(date[1]);
-  const month = ref(date[2].replace(/\./, ""));
-  const year = ref(date[3]);
-  const time = ref(date[5]);
-  const dateObj = {
+  const date = ref();
+  const dayOfWeek = ref();
+  const day = ref();
+  const month = ref();
+  const year = ref();
+  const time = ref();
+  const dateObj = ref({});
+
+  date.value = moment().locale("ru").format("llll").split(" ");
+  dayOfWeek.value =
+    date.value[0].charAt(0).toUpperCase() +
+    date.value[0].substring(1).replace(/,/, "");
+
+  day.value = date.value[1];
+  month.value = date.value[2].replace(/\./, "");
+  year.value = date.value[3];
+  time.value = date.value[5];
+
+  dateObj.value = {
     dayOfWeek: dayOfWeek,
     day: day,
     month: month,
@@ -18,12 +28,7 @@ export default function getDate() {
     time: time,
   };
 
-  const sec = computed(() => {
-    return ref(moment().format("LTS"));
-  });
-
   return {
     dateObj,
-    sec,
   };
 }

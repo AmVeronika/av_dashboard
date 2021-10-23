@@ -30,5 +30,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+.overall-progress{
+  margin-top: 35px;
+}
 </style>
