@@ -30,25 +30,5 @@ export default {
 </script>
 
 <style lang="scss">
-.overall-progress {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
 
-  &__diagram {
-    width: 65%;
-  }
-
-  &__list {
-    width: 35%;
-  }
-
-  &__item {
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-}
 </style>

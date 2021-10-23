@@ -33,6 +33,10 @@ export default defineComponent({
           position: "right",
           labels: {
             usePointStyle: true,
+            padding:50,
+            font: {
+              size: 16
+            }
           },
         },
       },

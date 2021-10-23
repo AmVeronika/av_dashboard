@@ -48,13 +48,13 @@ export default {
   column-gap: 30px;
   &--grid-3c{
     display: grid;
-    grid-template-columns: repeat(3,350px);
+    grid-template-columns: repeat(3,minmax(350px,1fr));
     gap: 30px;
     justify-content: space-between;
   }
   &--grid-2c{
     display: grid;
-    grid-template-columns: repeat(2,540px);
+    grid-template-columns: repeat(2,minmax(540px,1fr));
     gap: 30px;
     justify-content: space-between;
   }

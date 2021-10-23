@@ -13,7 +13,7 @@
       </option>
     </select>
     <div class="materials__wrap-list">
-      <ul class="materials__list">
+      <ul class="materials__list castom__scroll">
         <li
           class="materials__item"
           v-for="material in materialsList"
