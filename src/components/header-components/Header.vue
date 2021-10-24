@@ -24,19 +24,25 @@
         </svg>
         <p class="header__notification-quantity fs-14">12</p>
       </div>
-      <HeaderAccount />
-      <HeaderAuth/>
+      <HeaderAccount v-if="getAuthorization" />
+      <HeaderAuth v-else />
     </div>
   </header>
 </template>
 
 <script>
 import HeaderAccount from "./HeaderAccount";
+import HeaderAuth from "./HeaderAuth";
+import { mapGetters } from "vuex";
 
 export default {
   name: "Header",
   components: {
     HeaderAccount,
+    HeaderAuth,
+  },
+  computed: {
+    ...mapGetters(["getAuthorization"]),
   },
 };
 </script>
