@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import getDate from "../../hooks/getDate";
+import getDate from "../hooks/getDate";
 
 export default {
   name: "CurrentDate",
