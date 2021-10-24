@@ -1,0 +1,46 @@
+@import "./nullstyle.scss";
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./vars.scss";
+@import "./castom__scroll";
+
+.main{
+  background: $main-grey;
+  border-top-left-radius: 38px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+}
+.person-stat {
+  padding: 25px 20px;
+  background: $white;
+  border-radius: 34px;
+ &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    margin-top: 45px;
+  }
+  &__bg {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $col-light-orange;
+    border-radius: 38px;
+  }
+}
+.center-section {
+  height: 501px;
+  background: $white;
+  border-radius: 34px;
+  padding: 30px;
+}
+
+
+
+//calc(20px + (20+50) * ((100vw - 320px) / (1600 - 320)));

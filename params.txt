@@ -1,0 +1,24 @@
+//YELLOW:
+$col-orange: #FABB18; // оранжевый
+$col-light-orange: #FFF8E8; // светло-оранжевый
+$col-gauzy-orange: #FABB18; // полупрозрачный оранжевый
+$hover-orange: #FABB18;
+$pressed-orange: #FF8C00;
+$disabled-orange: #FFF8E8;
+
+//BLUE:
+$col-blue: #109CF1;
+$hover-blue: #34AFF9;
+$pressed-blue: #098EDF;
+$disabled-blue: #C2CFE0;
+
+//TASK statuses:
+$task-completed: #2ED47A;
+$task-active: #FFB946;
+$task-ended: #F7685B;
+
+//Theme:
+$main-grey: #F9F9F9;
+$text-grey: #8F8F8F;
+$white: #FFFFFF;
+$black: #000000;
