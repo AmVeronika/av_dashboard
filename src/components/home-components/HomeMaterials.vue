@@ -5,7 +5,6 @@
       <option class="materials__option" disabled value="">Категории</option>
       <option
         class="materials__option"
-        :style="{ background: material.category }"
         v-for="material in materialsList"
         :key="material.id"
       >
@@ -24,12 +23,7 @@
             :style="{ background: material.category }"
           ></span>
           <p class="materials__item-name fs-16r">{{ material.name }}</p>
-          <main-link
-            class="materials__item-link fs-14"
-            :href="material.url"
-            target="_blank"
-            >Перейти</main-link
-          >
+          <main-link :href="material.url" target="_blank">Перейти</main-link>
         </li>
       </ul>
     </div>
@@ -38,7 +32,6 @@
 
 <script>
 import Heading from "../elements/Heading";
-import MainLink from "../elements/MainLinks";
 
 export default {
   name: "HomeMaterials",
@@ -98,7 +91,6 @@ export default {
     };
   },
   components: {
-    MainLink,
     Heading,
   },
 };
@@ -133,18 +125,10 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 12px 17px;
-    border: 1px solid #F1F1F1;
+    border: 1px solid #f1f1f1;
     border-radius: 14px;
     margin-bottom: 10px;
     gap: 20px;
-
-    &-link {
-      color: $white;
-      padding: 6px 14px;
-      background: $black;
-      border-radius: 10px;
-      border: 1px solid $black;
-    }
 
     &-category {
       border-radius: 50%;
